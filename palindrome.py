@@ -41,7 +41,7 @@ pda = PDA(
                     'c': ('q1', ('c',)),
                   },
                   {
-                    # Guess the middle of the word, remove last word from stack
+                    # Guess the middle of the word, remove last letter from stack
                     #  (to match palindromes of odd length).
                     'x': ('q1', ''),
                     'a': ('q1', ''),
