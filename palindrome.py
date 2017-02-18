@@ -66,4 +66,8 @@ pda = PDA(
     final_states={'q2'}
 )
 
-print(pda.validate_input('abcba'))
+tests = ['abba', 'a', 'caca', 'acca', 'abccba', 'aca', 'cbbca', '']
+
+for test in tests:
+    print "Testing " + test + " :",
+    print(pda.validate_input(test))
