@@ -28,10 +28,10 @@ pda = PDA(
                   }],
             'c': [{
                     # Add 'c' to stack.
-                    'x': ('q0', ('b', 'x')),
-                    'a': ('q0', ('b', 'a')),
-                    'b': ('q0', ('b', 'b')),
-                    'c': ('q0', ('b', 'c')),
+                    'x': ('q0', ('c', 'x')),
+                    'a': ('q0', ('c', 'a')),
+                    'b': ('q0', ('c', 'b')),
+                    'c': ('q0', ('c', 'c')),
                   }],
             '' : [{
                     # Guess the middle of the word, keep the stack.
