@@ -12,16 +12,16 @@ pda = PDA(
     stack_symbols={'0', '1'},
     transitions={
         'q0': {
-            'a': [{'0': ('q1', ('1', '0'))}],  # transition pushes '1' to stack
-            '': [{'0': ('q3', ('0',))}]
+            'a': [{'0': ('q1', ['1', '0'])}],  # transition pushes '1' to stack
+            '': [{'0': ('q3', ['0'])}]
         },
         'q1': {
-            'a': [{'1': ('q1', ('1', '1'))}],
-            'b': [{'1': ('q2', '')}]  # transition pops from stack
+            'a': [{'1': ('q1', ['1', '1'])}],
+            'b': [{'1': ('q2', [])}]  # transition pops from stack
         },
         'q2': {
-            'b': [{'1': ('q2', '')}],
-            '': [{'0': ('q3', ('0',))}]  # transition does not change stack
+            'b': [{'1': ('q2', [])}],
+            '': [{'0': ('q3', ['0'])}]  # transition does not change stack
         }
     },
     initial_state='q0',

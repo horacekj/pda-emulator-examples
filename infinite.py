@@ -12,7 +12,7 @@ pda = PDA(
     stack_symbols={'0'},
     transitions={
         'q0': {
-            '': [{'0': ('q0', ('0',))}]
+            '': [{'0': ('q0', ['0'])}]
         },
     },
     initial_state='q0',
